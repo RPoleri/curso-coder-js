@@ -1,0 +1,100 @@
+body {
+    font-family: sans-serif;
+    padding: 1rem;
+    background: #fafafa;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+#filters {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#filters button {
+    margin: 0 .3rem;
+    padding: .4rem .8rem;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+}
+
+#filters button.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Contenedor principal: productos + carrito */
+.container {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Grid de productos con Flexbox */
+#products {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Tarjeta de producto */
+.product {
+    flex: 0 1 120px;
+    border: 1px solid #ccc;
+    padding: .5rem;
+    background: white;
+    text-align: center;
+}
+
+.product button {
+    margin-top: .5rem;
+    padding: .3rem .6rem;
+    border: none;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+/* Carrito */
+#cart-container {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background: white;
+}
+
+#cart {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+#cart li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+#cart li button {
+    border: none;
+    background: #dc3545;
+    color: white;
+    padding: .2rem .5rem;
+    cursor: pointer;
+}
+
+#clear {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}

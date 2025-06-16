@@ -1,14 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <title>Carrito Flex Simple</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <script src="main.js"></script>
+    <h1>Pedidos de Comida</h1>
+
+    <div id="filters">
+        <button data-cat="all" class="active">Todos</button>
+        <button data-cat="hamburguesa">Hamburguesas</button>
+        <button data-cat="pizza">Pizzas</button>
+        <button data-cat="ensalada">Ensaladas</button>
+        <button data-cat="milanesa">Milanesas</button>
+    </div>
+
+    <main class="container">
+        <div id="products"></div>
+
+        <aside id="cart-container">
+            <h2>Carrito</h2>
+            <ul id="cart"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button id="clear">Vaciar Carrito</button>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
