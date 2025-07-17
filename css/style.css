@@ -1,0 +1,24 @@
+body {
+    padding-bottom: 100px;
+}
+
+.cart {
+    position: fixed;
+    right: 1rem;
+    top: 5rem;
+    width: 18rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    transition: width .3s ease;
+}
+
+/* Solo header visible al colapsar */
+.cart.collapsed {
+    width: 3rem;
+}
+
+.cart.collapsed #cart-content {
+    display: none;
+}
